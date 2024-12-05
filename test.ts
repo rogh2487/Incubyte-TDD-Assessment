@@ -20,6 +20,8 @@ function add(numbers : string) : number{
 
  if(negtive_arr && Array.isArray(negtive_arr) && negtive_arr.length > 0){
    throw Error("negetive numbers not allowed " + [...negtive_arr])
+ }else if(!negtive_arr){
+   return 0;
  }
 
   if (num_arr && Array.isArray(num_arr) &&num_arr.length == 1) return parseInt(num_arr[0]);  
